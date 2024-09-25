@@ -6,8 +6,8 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{431498A1-F30A-4307-9FBF-B1D634326444}"
 	ProjectSection(SolutionItems) = preProject
 		CHANGELOG.md = CHANGELOG.md
+		docsource\configuration.md = docsource\configuration.md
 		integration-manifest.json = integration-manifest.json
-		readme_source.md = readme_source.md
 	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "entrust-ecs-caplugin", "entrust-ecs-caplugin\entrust-ecs-caplugin.csproj", "{900B0455-FAC3-4743-B742-23447420677A}"
