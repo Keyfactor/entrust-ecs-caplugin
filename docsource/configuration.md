@@ -10,3 +10,8 @@ The Entrust ECS AnyCA Gateway REST plugin extends the capabilities of Entrust Ce
 ## Gateway Registration
 
 In order to enroll for certificates the Keyfactor Command server must trust the trust chain. Once you know your Root and/or Subordinate CA in your Entrust account, make sure to download and import the certificate chain into the Command Server certificate store
+
+## Certificate Template Creation Step
+
+TODO Certificate Template Creation Step is a required section
+
