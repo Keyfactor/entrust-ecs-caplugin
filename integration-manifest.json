@@ -1,12 +1,69 @@
 {
-  "$schema": "https://keyfactor.github.io/integration-manifest-schema.json",
-  "integration_type": "ca-gateway",
-  "name": "<Gateway Name Here>",
-  "status": "prototype",
-  "support_level": "community",
-  "link_github": false,
-  "update_catalog": false,
-  "description": "<Description Here>",
-  "gateway_framework": "10.x.x",
-   "release_dir": "UPDATE-THIS-WITH-PATH-TO-BINARY-BUILD-FOLDER"
+    "$schema": "https://keyfactor.github.io/v2/integration-manifest-schema.json",
+    "integration_type": "anyca-plugin",
+    "name": "Entrust ECS AnyCA REST Gateway Plugin",
+    "status": "production",
+    "support_level": "kf-supported",
+    "link_github": true,
+    "update_catalog": true,
+    "description": "Entrust ECS plugin for the AnyCA REST Gateway framework",
+    "gateway_framework": "24.2.0",
+    "release_dir": "entrust-ecs-caplugin/bin/Release/net6.0",
+    "about": {
+        "carest": {
+            "product_ids": [],
+            "ca_plugin_config": [
+                {
+                    "name": "AuthUsername",
+                    "description": "Username for the gateway to authenticate with Entrust"
+                },
+                {
+                    "name": "AuthPassword",
+                    "description": "Password for the account used to authenticate with Entrust"
+                },
+                {
+                    "name": "ClientCertificate",
+                    "description": "The client certificate information used to authenticate with Entrust, only if configured to use certificate authentication"
+                },
+                {
+                    "name": "Name",
+                    "description": "The default requester name"
+                },
+                {
+                    "name": "Email",
+                    "description": "The default requester email address"
+                },
+                {
+                    "name": "PhoneNumber",
+                    "description": "The default requester phone number"
+                },
+                {
+                    "name": "IgnoreExpired",
+                    "description": "If set to true, will not sync expired certs from Entrust"
+                },
+                {
+                    "name": "Enabled",
+                    "description": "Flag to Enable or Disable gateway functionality. Disabling is primarily used to allow creation of the CA prior to configuration information being available."
+                }
+            ],
+            "enrollment_config": [
+                {
+                    "name": "LifetimeMonths",
+                    "description": "OPTIONAL: The number of months of validity to use when requesting certs. If not provided, default is 12."
+                },
+                {
+                    "name": "Organization",
+                    "description": "OPTIONAL: For requests that will not have a subject (such as ACME) you can use this field to provide an organization name. Value supplied here will override any CSR values, so do not include this field if you want the organization from the CSR to be used."
+                },
+                {
+                    "name": "CertificateUsage",
+                    "description": "Required for public SSL certificate types. Represents the key usage for the certificates enrolled against this template. Valid values are 'server', 'client', or 'serverclient'. Do not provide a value for cert types that are not public SSL."
+                },
+                {
+                    "name": "RenewalWindowDays",
+                    "description": "OPTIONAL: The number of days from certificate expiration that the gateway should do a renewal rather than a reissue. If not provided, default is 90."
+                }
+            ]
+        }
+    }
 }
