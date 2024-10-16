@@ -1,0 +1,10 @@
+{
+    "extensions": {
+        "Keyfactor.AnyGateway.Extensions.IAnyCAPlugin": {
+            "EntrustECSCAPlugin": {
+                "assemblypath": "EntrustECSCAPlugin.dll",
+                "TypeFullName": "Keyfactor.Extensions.CAPlugin.Entrust.ECSCAPlugin"
+            }
+        }
+    }
+}
