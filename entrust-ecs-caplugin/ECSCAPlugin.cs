@@ -482,7 +482,7 @@ namespace Keyfactor.Extensions.CAPlugin.Entrust
                 },
                 [Constants.Config.CLIENTCERT] = new PropertyConfigInfo()
                 {
-                    Comments = "The client certificate information used to authenticate with Entrust, only if configured to use certificate authentication",
+                    Comments = "The client certificate information used to authenticate with Entrust (if configured to use certificate authentication). This can be either a Windows cert store location and thumbprint, or a PFX file and password.",
                     Hidden = false,
                     DefaultValue = "",
                     Type = "ClientCertificate"
