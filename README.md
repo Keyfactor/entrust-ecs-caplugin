@@ -84,7 +84,7 @@ The Entrust ECS   Gateway AnyCA Gateway REST plugin is supported by Keyfactor fo
 
         * **AuthUsername** - Username for the gateway to authenticate with Entrust 
         * **AuthPassword** - Password for the account used to authenticate with Entrust 
-        * **ClientCertificate** - The client certificate information used to authenticate with Entrust (if configured to use certificate authentication). This can be either a Windows cert store location and thumbprint, or a PFX file and password. 
+        * **ClientCertificate** - The client certificate information used to authenticate with Entrust (if configured to use certificate authentication). This can be either a Windows cert store name and location (e.g. 'My' and 'LocalMachine' for the Local Computer personal cert store) and thumbprint, or a PFX file and password. 
         * **Name** - The default requester name 
         * **Email** - The default requester email address 
         * **PhoneNumber** - The default requester phone number 
