@@ -84,15 +84,14 @@ The Entrust ECS   Gateway AnyCA Gateway REST plugin is supported by Keyfactor fo
 
         * **AuthUsername** - Username for the gateway to authenticate with Entrust 
         * **AuthPassword** - Password for the account used to authenticate with Entrust 
-        * **ClientCertificate** - The client certificate information used to authenticate with Entrust, only if configured to use certificate authentication 
+        * **ClientCertificate** - The client certificate information used to authenticate with Entrust (if configured to use certificate authentication). This can be either a Windows cert store location and thumbprint, or a PFX file and password. 
         * **Name** - The default requester name 
         * **Email** - The default requester email address 
         * **PhoneNumber** - The default requester phone number 
         * **IgnoreExpired** - If set to true, will not sync expired certs from Entrust 
         * **Enabled** - Flag to Enable or Disable gateway functionality. Disabling is primarily used to allow creation of the CA prior to configuration information being available. 
 
-2. Define [Certificate Profiles](https://software.keyfactor.com/Guides/AnyCAGatewayREST/Content/AnyCAGatewayREST/AddCP-Gateway.htm) and [Certificate Templates](https://software.keyfactor.com/Guides/AnyCAGatewayREST/Content/AnyCAGatewayREST/AddCA-Gateway.htm) for the Certificate Authority as required. One Certificate Profile must be defined per Certificate Template. It's recommended that each Certificate Profile be named after the Product ID. The Entrust ECS   Gateway plugin supports the following product IDs:
-
+2. TODO Certificate Template Creation Step is a required section
 
 3. Follow the [official Keyfactor documentation](https://software.keyfactor.com/Guides/AnyCAGatewayREST/Content/AnyCAGatewayREST/AddCA-Keyfactor.htm) to add each defined Certificate Authority to Keyfactor Command and import the newly defined Certificate Templates.
 
@@ -102,8 +101,6 @@ The Entrust ECS   Gateway AnyCA Gateway REST plugin is supported by Keyfactor fo
     * **Organization** - OPTIONAL: For requests that will not have a subject (such as ACME) you can use this field to provide an organization name. Value supplied here will override any CSR values, so do not include this field if you want the organization from the CSR to be used. 
     * **CertificateUsage** - Required for public SSL certificate types. Represents the key usage for the certificates enrolled against this template. Valid values are 'server', 'client', or 'serverclient'. Do not provide a value for cert types that are not public SSL. 
     * **RenewalWindowDays** - OPTIONAL: The number of days from certificate expiration that the gateway should do a renewal rather than a reissue. If not provided, default is 90. 
-
-
 
 
 

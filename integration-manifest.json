@@ -23,7 +23,7 @@
                 },
                 {
                     "name": "ClientCertificate",
-                    "description": "The client certificate information used to authenticate with Entrust, only if configured to use certificate authentication"
+                    "description": "The client certificate information used to authenticate with Entrust (if configured to use certificate authentication). This can be either a Windows cert store location and thumbprint, or a PFX file and password."
                 },
                 {
                     "name": "Name",
