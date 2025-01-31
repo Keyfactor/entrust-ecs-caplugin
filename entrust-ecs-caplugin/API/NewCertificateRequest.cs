@@ -19,7 +19,7 @@ namespace Keyfactor.Extensions.CAPlugin.Entrust.API
 	{
 		public NewCertificateCall()
 		{
-			Resource = "enterprise/v2/certificates";
+			Resource = "certificates";
 			Method = "POST";
 		}
 	}
