@@ -14,10 +14,6 @@
 <img src="https://img.shields.io/github/downloads/Keyfactor/entrust-ecs-caplugin/total?style=flat-square&label=downloads&color=28B905" alt="GitHub Downloads (all assets, all releases)" />
 </p>
 
-> [!IMPORTANT]
-> Entrust Certificate Services are being discontinued by Entrust on September 8, 2025. On September 8th, this gateway
-> plugin will be archived and no longer supported.
-
 <p align="center">
   <!-- TOC -->
   <a href="#support">
@@ -52,6 +48,11 @@ The Entrust ECS AnyCA Gateway REST plugin extends the capabilities of Entrust Ce
 The Entrust ECS   Gateway AnyCA Gateway REST plugin is compatible with the Keyfactor AnyCA Gateway REST 24.2.0 and later.
 
 ## Support
+
+> [!WARNING]
+> Entrust Certificate Services are being discontinued by Entrust on September 8, 2025. On September 8th, this gateway
+> plugin will be archived and no longer supported.
+
 The Entrust ECS   Gateway AnyCA Gateway REST plugin is supported by Keyfactor for Keyfactor customers. If you have a support issue, please open a support ticket with your Keyfactor representative. If you have a support issue, please open a support ticket via the Keyfactor Support Portal at https://support.keyfactor.com. 
 
 > To report a problem or suggest a new feature, use the **[Issues](../../issues)** tab. If you want to contribute actual bug fixes or proposed enhancements, use the **[Pull requests](../../pulls)** tab.
