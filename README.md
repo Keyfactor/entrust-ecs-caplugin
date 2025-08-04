@@ -1,6 +1,10 @@
 <h1 align="center" style="border-bottom: none">
-    Entrust ECS   Gateway AnyCA Gateway REST Plugin
+    Entrust ECS   Gateway AnyCA Gateway REST Plugin (DEPRECATED)
 </h1>
+
+> [!IMPORTANT] 
+> Entrust Certificate Services are being discontinued by Entrust on September 8, 2025. On September 8th, this gateway 
+> plugin will be archived and no longer supported.
 
 <p align="center">
   <!-- Badges -->
@@ -9,6 +13,10 @@
 <img src="https://img.shields.io/github/issues/Keyfactor/entrust-ecs-caplugin?style=flat-square" alt="Issues" />
 <img src="https://img.shields.io/github/downloads/Keyfactor/entrust-ecs-caplugin/total?style=flat-square&label=downloads&color=28B905" alt="GitHub Downloads (all assets, all releases)" />
 </p>
+
+> [!IMPORTANT]
+> Entrust Certificate Services are being discontinued by Entrust on September 8, 2025. On September 8th, this gateway
+> plugin will be archived and no longer supported.
 
 <p align="center">
   <!-- TOC -->
